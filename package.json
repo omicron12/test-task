@@ -33,7 +33,7 @@
         "simplemde": "^1.11",
         "sortablejs": "^1.13.0",
         "tom-select": "2.2.2",
-        "postcss": "^8.2.10",
+        "postcss": "^8.4.31",
         "resolve-url-loader": "^5.0.0",
         "rtlcss": "^4.0.0",
         "sass": "^1.32.8",
