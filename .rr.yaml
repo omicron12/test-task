@@ -10,7 +10,7 @@ http:
 
   uploads:
   
-    dir: "/app/public"
+    dir: "/var/www/public"
 
     forbid: [".php", ".sh"]
 
@@ -21,7 +21,7 @@ http:
 
   static:
     
-    dir: "/app/public"
+    dir: "/var/www/public"
 
     forbid: [".env", ".php"]
 
