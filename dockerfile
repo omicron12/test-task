@@ -28,32 +28,6 @@ COPY .rr.yaml /var/www/.rr.yaml
 EXPOSE 8001
 # Запускаем CMD
 CMD ["php", "rr", "serve"]
-# Версия
-# FROM php:8.1
-# # Обновление
-# RUN apt-get update
-# # Устанавливаем с подтверждением
-# RUN apt-get install -y sqlite3 libsqlite3-dev nodejs npm zip unzip
-# # Обращаемся к сайту для установки композера
-# RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-# # Копируем все в /var/www
-# COPY */bin/sh /var/www
-# # Устанавливаем его рабочей директорией
-# WORKDIR /var/www
-# # Копируем композер в рабочую директорию
-# COPY composer.json /usr/local/bin/composer.json
-# #Устанавливаем композер
-# RUN composer install --no-interaction --no-dev --optimize-autoloader
-# # Устанавливаем yarn
-# RUN npm install --global yarn
-# # Устанавливаем зависимости
-# RUN yarn install
-# # Копируем .rr.yaml в рабочую директорию
-# COPY .rr.yaml /var/www/.rr.yaml
-# # Открываем порт 8001
-# EXPOSE 8001
-# # Запускаем CMD
-# #CMD ["php", "rr", "serve"]
 # # При работе возникла ошибка rr файла, постарался запустить контейнер по таймеру, вручную пройдя все команды
 # CMD ["sleep", "10000"]
 #Увидел ошибку bash: rr: command not found
