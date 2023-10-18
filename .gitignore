@@ -20,3 +20,4 @@ yarn-error.log
 /database.sqlite
 /public/mix-manifest.json
 /database.sqlite-journal
+/src/
